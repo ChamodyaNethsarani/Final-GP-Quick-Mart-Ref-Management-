@@ -1,0 +1,201 @@
+/* General body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.addprd {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+/* Main content styling */
+.main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Low stock notification */
+.low-stock-notification {
+  background-color: #ffcccb;
+  color: #d8000c;
+  padding: 15px;
+  border: 1px solid #d8000c;
+  margin: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Popup and form styles */
+.popup,
+.edit-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.popup.active,
+.edit-popup.active {
+  display: block;
+}
+
+.popup h2,
+.edit-popup h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label {
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+}
+
+form button {
+  width: 48%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Product Table Styling */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.product-table th {
+  background-color: #0051ff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action buttons */
+.delete-btn,
+.edit-btn {
+  padding: 8px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.edit-btn {
+  background-color: orange;
+}
+
+.edit-btn:hover {
+  background-color: darkorange;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-table th,
+  .product-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .popup,
+  .edit-popup {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  form input,
+  form select {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,414 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding-top: 80px; /* Adjust this value based on the height of your fixed navbar */
+  color: #333;
+}
+.sales_page {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+header {
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Header Buttons */
+.header-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.header-buttons a,
+.header-buttons button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons a:hover,
+.header-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Filter/Search Form */
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.filter-container select,
+.filter-container input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+  max-width: 100%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.filter-container select:focus,
+.filter-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.filter-container button {
+  padding: 10px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-container button:hover {
+  background-color: #c82333;
+}
+
+.filter-container button:active {
+  background-color: #bd2130;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #333;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.disable-btn {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Alignment Fixes */
+table th,
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Ensure select buttons align properly */
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 0;
+}
+
+/* Cart Button Alignment */
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart Table Styling */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  border-top: 2px solid #007bff;
+  background-color: #fff;
+}
+
+.cart-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 12px 15px;
+}
+
+.cart-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.cart-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #e0f7ff;
+}
+
+.cart-table .empty-cart-row {
+  text-align: center;
+  font-style: italic;
+  padding: 15px 0;
+  background-color: #f8f9fa;
+}
+
+/* Cart Total */
+.cart-total {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #007bff;
+}
+
+/* Payment Options Styling */
+.payment-options {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.payment-options h2 {
+  color: #007bff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.payment-options label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-options select,
+.payment-options input[type="text"],
+.payment-options input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.payment-options input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.payment-options input:focus,
+.payment-options select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.payment-options .description {
+  margin-top: 10px;
+}
+
+.payment-options .description input {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.payment-options .submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.payment-options button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.payment-options button:hover {
+  background-color: #0056b3;
+}
+
+/* Make tables responsive */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive table {
+  min-width: 800px;
+}
+
+/* General Styling for Product Table */
+.product-table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.product-table th,
+.product-table td {
+  text-align: center;
+}
+
+/* Aligning the Quantity Input and Add to Cart Button */
+.product-table .action-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between input and button */
+}
+
+.product-table .action-cell input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.product-table .action-cell button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.product-table .action-cell button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-container,
+  .header-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-container input,
+  .filter-container select,
+  .filter-container button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table-responsive table {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cart-total {
+    font-size: 16px;
+  }
+
+  .payment-options select,
+  .payment-options input[type="text"],
+  .payment-options input[type="number"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .payment-options button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .product-table .action-cell {
+    flex-direction: column; /* Stack input and button vertically on small screens */
+    gap: 5px;
+  }
+
+  .product-table .action-cell input[type="number"] {
+    width: 100%;
+  }
+
+  .product-table .action-cell button {
+    width: 100%;
+  }
+}

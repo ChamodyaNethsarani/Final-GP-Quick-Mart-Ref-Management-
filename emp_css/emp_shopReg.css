@@ -1,0 +1,229 @@
+/* General body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.shopreg {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+/* Page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Product table styling */
+.shop-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shop-table th,
+.shop-table td {
+  border: 1px solid #ddd;
+  padding: 12px 5px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.shop-table th {
+  background-color: #0066ff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.shop-table td {
+  color: #555;
+}
+
+/* Hover effect for rows */
+.shop-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Action buttons */
+.delete-btn,
+.edit-btn {
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.edit-btn {
+  background-color: rgb(0, 89, 253);
+}
+
+.edit-btn:hover {
+  background-color: darkorange;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Popup form styling */
+.popup,
+.edit-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  width: 600px; /* Set new width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.popup.active,
+.edit-popup.active {
+  display: block;
+}
+
+.popup h2,
+.edit-popup h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input fields and labels */
+form label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 6px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+}
+
+/* Cancel button */
+.popup .btn,
+.edit-popup .btn {
+  background-color: #4caf50;
+  margin-right: 10px;
+}
+
+.popup .btn:hover,
+.edit-popup .btn:hover {
+  background-color: #45a049;
+}
+
+/* Low stock notification */
+.low-stock-notification {
+  background-color: #ffcccb;
+  color: #d8000c;
+  padding: 15px;
+  border: 1px solid #d8000c;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+  .shop-table th,
+  .shop-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .delete-btn,
+  .edit-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Popup styles for smaller screens */
+  .popup,
+  .edit-popup {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* Adjust form inputs for mobile */
+  form input,
+  form select {
+    font-size: 14px;
+  }
+}
+
+/* Transition effects for interactivity */
+button,
+input,
+select {
+  transition: all 0.2s ease-in-out;
+}
